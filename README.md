@@ -1,6 +1,11 @@
-# appnavigator
+# Flutter Navigation and Routing
 
 Move one screen to any other screen
+
+2 way to Screen Navigate:
+1. Using Navigator
+2. Using Route
+
 
 ## Getting Started
 
