@@ -1,5 +1,7 @@
 import 'package:appnavigator/screens/FirstScreen.dart';
+import 'package:appnavigator/screens/HomeScreen.dart';
 import 'package:appnavigator/screens/SecondScreen.dart';
+import 'package:appnavigator/screens/WelcomeScreen.dart';
 // import 'package:appnavigator/screens/HomeScreen.dart';
 import 'package:flutter/material.dart';
 
@@ -21,10 +23,12 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       // home: const HomeScreen(),
-      initialRoute: '/',
+      initialRoute: '/home',
       routes: {
         '/': (context) => const FirstScreen(),
         '/second': (context) => const SecondScreen(),
+        '/home': (context) => const HomeScreen(),
+        '/welcome': (context) =>  WelcomeScreen(),
       },
     );
   }

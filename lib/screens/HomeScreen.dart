@@ -31,12 +31,14 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             ElevatedButton(
               onPressed: () =>
-                Navigator.push(
-                context,
-                MaterialPageRoute(
-                    builder: (context) =>
-                        WelcomeScreen(txtName.text.toString())),
-              ),
+                  //   Navigator.push(
+                  //   context,
+                  //   MaterialPageRoute(
+                  //       builder: (context) =>
+                  //           WelcomeScreen(txtName.text.toString())
+                  //   )),
+                  Navigator.pushNamed(context, '/welcome',
+                      arguments: txtName.text.toString()),
               child: const Text('Got Next Screen'),
             )
           ],
